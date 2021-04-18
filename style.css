@@ -1,0 +1,84 @@
+@font-face {
+  font-family: vazir;
+  src: url(./Vazir-Regular.ttf);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: vazir;
+}
+i {
+  color: #adada9;
+  position: absolute;
+  margin-right: -30px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.left {
+  display: flex;
+  width: 55%;
+  background-color: #32BDDE;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+  padding: 0rem 7.5rem;
+  direction: rtl;
+}
+.head {
+  color: #099dca;
+  font-weight: bold;
+  font-size: small
+}
+.head2 {
+  margin-bottom: -40px;
+}
+.desc {
+  color: #adada9;
+}
+.user,
+.pass {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #c8c9c4;
+  font-family: vazir;
+}
+.user::placeholder,
+.pass::placeholder,
+.captcha-input::placeholder {
+  color: #c8c9c4dc;
+}
+.captcha-input {
+  width: 75%;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #c8c9c4;
+  font-family: vazir;
+}
+.captcha-pic {
+  width: 6rem;
+}
+.login {
+  border: none;
+  outline: none;
+  background-color: #008adf;
+  color: white;
+  border-radius: 2px;
+  height: 2rem;
+}
+.remember {
+  font-size: x-small;
+  color: #adada9;
+}
