@@ -29,29 +29,32 @@ i {
   justify-content: center;
   align-items: center;
   width: 55%;
-  background-color: #32bdde;
+  background-color: #099dca;
 }
 .logo {
   width: 4rem;
   height: 4rem;
   position: absolute;
-  color: white;
+  color: #1a89db;
 }
-/* ------------------------------------------------ring */
+.title {
+  color: white;
+  position: relative;
+  top: 50px;
+  color: #1a89db;
+  font-weight: bolder;
+}
+/* -----------------------------ring */
 .razar {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 55%;
-  height: 55%;
-  background-size: 100% 100%;
-  border-radius: 350px;
 }
 .ringbase {
   position: absolute;
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   border-radius: 350px;
   opacity: 0;
   z-index: 10;
@@ -110,17 +113,17 @@ i {
     opacity: 0;
   }
 }
-/* ------------------------------------------------pointer */
+/* -------------------------------pointer */
 .pointer {
   position: absolute;
-  width: 700px;
+  width: 500px;
 
   animation: circling 10s linear;
   animation-iteration-count: infinite;
   z-index: 20;
 }
-.pointer div {position: absolute;
-  box-shadow: 0 50px 50px 50px #72c4e5, inset 0 0 0 0 #72cee5;
+.pointer div {
+  position: absolute;
   width: 50%;
   border-bottom: 2px solid #ffffff;
 }
@@ -135,7 +138,7 @@ i {
     transform: rotate(360deg);
   }
 }
-/* ----------------------------------------------right */
+/* ----------------------------------------------------right */
 .right {
   display: flex;
   flex-direction: column;
@@ -189,4 +192,145 @@ i {
 .remember {
   font-size: x-small;
   color: #adada9;
+}
+/* -------------------------------------------------mobile layout */
+@media screen and (max-width: 1000px) {
+  i {
+    color: #adada9;
+    position: absolute;
+    margin-right: -10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    background-color: #099dca;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    direction: rtl;
+  }
+  .razar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 350px;
+  }
+  .ringbase {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    opacity: 0;
+    z-index: 10;
+  }
+  .pointer {
+    position: absolute;
+    width: 150px;
+  
+    animation: circling 10s linear;
+    animation-iteration-count: infinite;
+    z-index: 20;
+  }
+  .pointer div {
+    position: absolute;
+    width: 50%;
+    border-bottom: 2px solid #ffffff;
+  }
+  .head2 {
+    margin-bottom: 0;
+  }
+  .login {
+    border: none;
+    outline: none;
+    background-color: #008adf;
+    color: white;
+    border-radius: 2px;
+    height: 2rem;
+    margin-top: 10px;
+  }
+}
+/* -------------------------------------------------tablet layout */
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  i {
+    color: #adada9;
+    position: absolute;
+    margin-right: -10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    background-color: #099dca;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 1rem;
+    direction: rtl;
+  }
+  .razar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 350px;
+  }
+  .ringbase {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    opacity: 0;
+    z-index: 10;
+  }
+  .pointer {
+    position: absolute;
+    width: 150px;
+  
+    animation: circling 10s linear;
+    animation-iteration-count: infinite;
+    z-index: 20;
+  }
+  .pointer div {
+    position: absolute;
+    width: 50%;
+    border-bottom: 2px solid #ffffff;
+  }
+  .head2 {
+    margin-bottom: 0;
+  }
+  .login {
+    border: none;
+    outline: none;
+    background-color: #008adf;
+    color: white;
+    border-radius: 2px;
+    height: 2rem;
+    margin-top: 10px;
+  }
 }
